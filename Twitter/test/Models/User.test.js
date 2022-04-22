@@ -25,5 +25,10 @@ describe("Test para User", () =>{
         expect(user.getLastUpdated).not.toBeUndefined()
     });
     
-
+    test('Requerimiento 4: Setters en objetos', () => {
+        const user = new User (1, "JohnNadja", "john", "Bio")
+        user.setUsername = "JStry"
+        expect(user.username).toBe("JStry")
+    });
+    
 })
