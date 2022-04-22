@@ -28,7 +28,9 @@ describe("Test para User", () =>{
     test('Requerimiento 4: Setters en objetos', () => {
         const user = new User (1, "JohnNadja", "john", "Bio")
         user.setUsername = "JStry"
+        user.setBio = "Diving"
         expect(user.username).toBe("JStry")
+        expect(user.bio).toBe("Diving")
     });
     
 })
