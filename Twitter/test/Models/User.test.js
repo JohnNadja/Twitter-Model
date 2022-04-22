@@ -20,6 +20,9 @@ describe("Test para User", () =>{
     test('Requerimiento 3: Getters en objetos', () => {
         const user = new User (1, "JohnNadja", "john", "Bio")
         expect(user.getUsername).toBe("JohnNadja")
+        expect(user.getBio).toBe("Bio")
+        expect(user.getDateCreated).not.toBeUndefined()
+        expect(user.getLastUpdated).not.toBeUndefined()
     });
     
 
